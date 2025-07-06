@@ -1,0 +1,50 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Iphone 13 Pro",
+      "price": 100,
+      "stock": 20,
+      "description": "Iphone 13 pro siyah kapak",
+      "imageUrl": "https://st-troy.mncdn.com/mnresize/775/775/Content/media/ProductImg/original/mlpf3tua-apple-iphone-13-128gb-gece-yarisi-638835129370770250.jpg",
+      "categoryId": "1",
+      "categoryName": "Telefon"
+    },
+    {
+      "id": "2",
+      "name": "Airfryer",
+      "price": 200,
+      "stock": 5,
+      "description": "Luxell LXAF-01 Fast Fryer XXL 7.5 Litre Yagsiz Hava Fritozu Airfryer Elektrikli Ev Aletleri",
+      "imageUrl": "https://www.haibrag.com/luxell-lxaf-01-fast-fryer-xxl-75-litre-yagsiz-hava-fritozu-airfryer-elektrikli-ev-aletleri-luxell-440898-37-K.jpg",
+      "categoryId": "2",
+      "categoryName": "Elektronik"
+    },
+    {
+      "id": "3",
+      "name": "Tişört",
+      "price": 300,
+      "stock": 0,
+      "description": "Kısa Kollu Tişört",
+      "imageUrl": "https://static.ticimax.cloud/cdn-cgi/image/width=540,quality=99/11567//uploads/editoruploads/kadin-outlet-giyim-modelleri.jpg",
+      "categoryId": "3",
+      "categoryName": "Giyim"
+    },
+    {
+      "id": "4",
+      "name": "Kulaklık",
+      "price": 100,
+      "stock": 3,
+      "categoryName": "Elektronik",
+      "imageUrl": "https://sennheiser-hearing.com.tr/cdn/shop/files/hd-350-bt-kulaklik.jpg"
+    },
+    {
+      "id": "026b",
+      "name": "Mustafa Naci AYTAN",
+      "price": 22,
+      "stock": 1,
+      "categoryName": "Elektronik",
+      "imageUrl": "https://static.ticimax.cloud/cdn-cgi/image/width=370,quality=85/34991/uploads/urunresimleri/buyuk/isikli-kulakici-kablosuz-bluetooth-kul-6b7-7d.jpg"
+    }
+  ]
+}

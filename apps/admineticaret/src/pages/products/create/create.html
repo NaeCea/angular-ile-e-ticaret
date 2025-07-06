@@ -1,0 +1,98 @@
+<app-blank pageTitle="Ürün Ekle" [breadcrumbs]="[
+    { title: 'Ürünler', link: '/products', icon: 'box'},
+    { title: 'Yeni Ürün', link: '/products/create', icon: 'add'}
+    ]"></app-blank>
+
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">{{cardTitle()}}</h5>
+      
+    </div>
+    <div class="card-body">
+        <form #form="ngForm" (ngSubmit)="saveProduct(form)">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Ürün Adı</label>
+                <input type="text" class="form-control" id="productName" placeholder="Ürün adını giriniz" required [(ngModel)]="data().name" name="name">
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Ürün Fiyatı</label>
+                <input type="text" class="form-control" id="productPrice" placeholder="Ürün fiyatını giriniz" required [(ngModel)]="data().price" name="price"  
+                mask="separator.2" thousandSeparator=".">
+            </div>
+            <div class="mb-3">
+                <label for="productStock" class="form-label ">Ürün Stoğu</label>
+
+                <input type="number" class="form-control" id="productStock" placeholder="Ürün stok miktarını giriniz" required [(ngModel)]="data().stock" name="stock">
+            </div>      
+            <div class="mb-3">
+                <label for="productCategory" class="form-label">Kategori</label>
+                <select class="form-select" id="productCategory" required [(ngModel)]="data().categoryName" name="categoryName">
+                    <option value="" disabled selected>Kategori seçiniz</option>
+                    <option value="Telefon">Telefon</option>
+                    <option value="Elektronik">Elektronik</option>
+                    <option value="Giyim">Giyim</option>
+                </select>
+
+            </div>
+            <div class="mb-3">
+                <label for="productImage" class="form-label">Ürün Resmi</label>
+                <input type="text" class="form-control" id="productImage" accept="image/*"  [(ngModel)]="data().imageUrl" name="imageUrl">
+            </div>
+            <button type="submit" class="btn btn-primary">{{btnName()}}</button>
+        </form>
+    </div>
+</div>
+<style>
+    .card {
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .form-label {
+        font-weight: bold;
+    }
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+    .mb-3 {
+        margin-bottom: 1rem;
+    }
+    .form-select {
+        width: 100%;
+    }
+    .form-control {
+        width: 100%;
+    }
+    .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .card {
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        background-color: #fff;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+    .btn-primary:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+    
+    .form-control:focus {
+        border-color: #80bdff;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+    </style>

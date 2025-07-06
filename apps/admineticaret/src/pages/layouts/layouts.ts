@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, signal, ViewEncapsulation } from '@angular/core';
 import Breadcrumb from './breadcrumb';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { navigations } from '../../navigation';
 import { NavPipe } from '../../pipes/nav-pipe';
 import { FormsModule } from '@angular/forms';
@@ -12,7 +12,8 @@ import { FormsModule } from '@angular/forms';
     RouterLink,
     RouterLinkActive,
     NavPipe,
-    FormsModule
+    FormsModule,
+    RouterOutlet
   ],
   templateUrl: './layouts.html',
   encapsulation: ViewEncapsulation.None,

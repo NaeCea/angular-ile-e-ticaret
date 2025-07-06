@@ -13,7 +13,7 @@ export const navigations: NavigationItemModel[] = [
       },
       {
         title: 'Ürünler',
-        icon: 'shopping_cart',
+        icon: 'box',
         link: '/products',
       },
       {
